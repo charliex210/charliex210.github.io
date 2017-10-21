@@ -2,11 +2,19 @@
   <h1>10X Genomics analysis reports</h1>
   <body>
     <h2>OSK D2 iPSCs</h2>
-    <p><a href="./docs/raw_web_summary.html">Original analysis</a></p>
+    <p><a href="./docs/raw_web_summary.html" target="_blank">Original analysis</a></p>
     <p>测序数据质量及初步的聚类和降维分析.</p>
-    <p><a href="./docs/10x_summary_10_pcs.html">Re-analysis</a></p>
+    <p><a href="./docs/10x_summary_10_pcs.html" target="_blank">Re-analysis</a></p>
     <p>用数据的前十个PCs重新做聚类分析和t-SNE降维展示.</p>
     <p>PS：对比两次结果，t-SNE在二维水平上都不能完全把不同的细胞群体区分开来，形成一个大团，跟C1数据的降维结果类似,是iPS数据的正常体现。</p>
     <p>但应注意到大团内部，不同区域细胞的特异基因有很大差异，把数据噪音考虑进去可以对细胞的异质性做更深入的探索。</p>
+    <br><h2>Mouse and human mixture samples</h2>
+    <p><a href="./docs/align_mm10.html" target="_blank">Align to mouse reference</a></p>
+    <p>比对到小鼠基因组的基因表达数据。数据质量很好，t-SNE分群明显，代表着不同类型的血液细胞？</p>
+    <p><a href="./docs/align_hg19.html" target="_blank">Align to human reference</a></p>
+    <p>比对到人基因组的基因表达数据。结果与小鼠的类似。</p>
+    <p><a href="./docs/align_hg19_and_mm10.html" target="_blank">Align to human and mouse reference</a></p>
+    <p>比对到10x公司的小鼠和人混合reference（这个reference应该是用来评价单细胞分选能力的）。估计的人的细胞数是4287，小鼠的细胞数是6335，都比分别map到一种基因组的细胞数要少。
+      估计的总的细胞数是10195，也就是有4287+6335-10195=426个droplet，既有人的基因组信息也有小鼠的基因组信息，ANALYSIS中有散点图分布。</p>
    </body>
   </html>
