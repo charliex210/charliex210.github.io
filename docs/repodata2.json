@@ -1,0 +1,11 @@
+{
+  "info": {
+    "subdir": "linux-64"
+  },
+  "packages": [],
+  "removed": [
+    "r-imager-0.42.1-r351h29659fb_0.tar.bz2"
+  ],
+  "repodata_version": 2,
+  "revoked": []
+}
